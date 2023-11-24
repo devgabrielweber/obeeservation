@@ -1,0 +1,18 @@
+created:
+    - app/Http/Controllers/leituraSensorController.php
+    - database/factories/LeituraSensorFactory.php
+    - database/factories/SetorFactory.php
+    - database/migrations/2023_11_10_173923_create_leitura_sensors_table.php
+    - database/migrations/2023_11_10_173924_create_setors_table.php
+    - app/Models/leituraSensor.php
+    - app/Models/setor.php
+    - tests/Feature/Http/Controllers/leituraSensorControllerTest.php
+updated:
+    - routes/web.php
+skipped:
+    - resources/views/leituraSensor/index.blade.php
+    - resources/views/leituraSensor/create.blade.php
+    - resources/views/leituraSensor/index.blade.php
+models:
+    leituraSensor: { cod_sensor: 'string:255', valor: float, setor_id: 'id foregin:setor', grandeza: 'string:10' }
+    setor: { nome: 'string:255' }
